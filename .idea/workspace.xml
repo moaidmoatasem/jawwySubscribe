@@ -4,18 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="86924130-531d-42fd-973f-84e65667ada5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/PageBase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/SubscribePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/SubscribePageTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/TestBase.java" afterDir="false" />
+    <list default="true" id="86924130-531d-42fd-973f-84e65667ada5" name="Changes" comment="3 checks over Type &amp; Price and Currency are running now">
+      <change afterPath="$PROJECT_DIR$/allure-results/03e513de-0372-4f50-968b-ddef9703fa85-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/0bec3f75-a77e-4eff-869b-75141d6a3885-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/1593b8ed-04a2-4564-bd96-4dfd766f9e71-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/47653c7e-82b8-4575-9a37-875a3659a4da-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/62c3956a-29df-461f-96d2-2d0f0c23c0a7-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/67af55c6-abe1-4942-bf67-2d467a5c66e2-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/78c02e84-2374-460d-a401-9159ef92256d-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/824adfde-72bb-4214-9fe1-80a90c648bf5-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/937ded71-f778-47cc-9d53-0fa61066de39-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/a11020cb-bcf1-4295-8744-4a7ccbd981c5-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/ac73fd12-b481-4abf-8dc9-77741de33a46-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/b3fad144-d490-46fc-b249-2619493c037d-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/b7d59ef8-dd1e-4a21-a7f7-efd0c6e51326-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/e4348a9b-95bd-43b3-9ddb-f95c84c57fba-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/ec4ca7a7-cba8-4ce9-9f40-d272d8b48420-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/ff9fb714-cf68-4cbd-a794-012c5f19c384-container.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,31 +51,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Users/moaid/.m2",
+    "settings.editor.selected.configurable": "MavenSettings"
   }
-}</component>
-  <component name="RunManager" selected="TestNG.SubscribePageTest.verifyCurrency">
-    <configuration name="SubscribePageTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="jawwySubscribe" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.SubscribePageTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+}]]></component>
+  <component name="RunManager" selected="TestNG.tests">
     <configuration name="SubscribePageTest.printTitles" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="jawwySubscribe" />
       <extension name="coverage">
@@ -133,13 +125,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="tests" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="jawwySubscribe" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="TEST_OBJECT" value="PACKAGE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.tests" />
         <item itemvalue="TestNG.SubscribePageTest.verifyCurrency" />
         <item itemvalue="TestNG.SubscribePageTest.verifyPrice" />
         <item itemvalue="TestNG.&lt;default&gt;" />
         <item itemvalue="TestNG.SubscribePageTest.printTitles" />
-        <item itemvalue="TestNG.SubscribePageTest" />
       </list>
     </recent_temporary>
   </component>
@@ -152,6 +160,14 @@
       <option name="presentableId" value="Default" />
       <updated>1683206118485</updated>
     </task>
+    <task id="LOCAL-00001" summary="3 checks over Type &amp; Price and Currency are running now">
+      <created>1683235246543</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1683235246543</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -164,5 +180,20 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="3 checks over Type &amp; Price and Currency are running now" />
+    <option name="LAST_COMMIT_MESSAGE" value="3 checks over Type &amp; Price and Currency are running now" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pages/SubscribePage.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
