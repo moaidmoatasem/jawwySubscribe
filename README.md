@@ -62,4 +62,9 @@ You can open the Allure report in a web browser by navigating to the target/allu
 * The test suite uses the Selenium WebDriver to interact with Jawwy TV. 
 * The test suite uses the Allure Report framework to generate reports.
 
+##### Running Evidence:
+
+https://user-images.githubusercontent.com/47253204/236695219-1cce7c59-00df-43dd-b04f-8a92e372c3cb.mp4
+
+
 Thank you.
