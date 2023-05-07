@@ -32,7 +32,7 @@ Then, install the required dependencies:
 
 _Code snippet:_
 
-`**mvn install**`
+**`mvn install`**
 
 
 After getting everything in place ... Finally, Now you are ready to run the test suite:
