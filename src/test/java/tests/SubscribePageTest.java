@@ -6,6 +6,8 @@ import pages.ArabicSubscribePage;
 import pages.EnglishSubscribePage;
 import pages.LaunchSubscribePage;
 
+import static org.testng.Assert.fail;
+
 public class SubscribePageTest extends TestBase {
 
     public LaunchSubscribePage launchSubscribePage;
@@ -25,8 +27,13 @@ public class SubscribePageTest extends TestBase {
         } else {
             expectedTitle = "Jawwy TV | Watch Movies, Series & Live TV - Enjoy Free Trial";
         }
-//        Assert.assertEquals(expectedTitle, actualTitle);
-        verifyPageTitle(expectedTitle);
+
+        try {
+            Assert.assertEquals(expectedTitle, driver.getTitle());
+        } catch (AssertionError e) {
+            System.out.println("Assertion failed: " + e.getMessage());
+            fail("Assertion failed");
+        }
     }
     //Type & Price and Currency
 
@@ -35,12 +42,22 @@ public class SubscribePageTest extends TestBase {
         launchSubscribePage = new LaunchSubscribePage(driver);
         if (isArabicURL()) {
             arabicSubscribePage = new ArabicSubscribePage(driver);
-            Assert.assertEquals(arabicSubscribePage.pkgArTitles.getText(), arabicSubscribePage.packagesArNames[1]);
+            try {
+                Assert.assertEquals(arabicSubscribePage.pkgArTitles.getText(), arabicSubscribePage.packagesArNames[1]);
+            } catch (AssertionError e) {
+                System.out.println("Assertion failed: " + e.getMessage());
+                fail("Assertion failed");
+            }
         }
         //        asp.langBtn.click();
         else {
             englishSubscribePage = new EnglishSubscribePage(driver);
-            Assert.assertEquals(englishSubscribePage.pkgEnTitles.getText(), englishSubscribePage.packagesEnNames[1].toUpperCase());
+            try {
+                Assert.assertEquals(englishSubscribePage.pkgEnTitles.getText(), englishSubscribePage.packagesEnNames[1].toUpperCase());
+            } catch (AssertionError e) {
+                System.out.println("Assertion failed: " + e.getMessage());
+                fail("Assertion failed");
+            }
         }
     }
 
@@ -51,11 +68,21 @@ public class SubscribePageTest extends TestBase {
         String[] expectedPrices = {"0.25", "0.5", "1"};
         if (isArabicURL()) {
             arabicSubscribePage = new ArabicSubscribePage(driver);
-            Assert.assertEquals(arabicSubscribePage.packageArPrice.getText(), expectedPrices[1]);
+            try {
+                Assert.assertEquals(arabicSubscribePage.packageArPrice.getText(), expectedPrices[1]);
+            } catch (AssertionError e) {
+                System.out.println("Assertion failed: " + e.getMessage());
+                fail("Assertion failed");
+            }
         } else {
 //        asp.langBtn.click();
             englishSubscribePage = new EnglishSubscribePage(driver);
-            Assert.assertEquals(englishSubscribePage.packageEnPrice.getText(), expectedPrices[1]);
+            try {
+                Assert.assertEquals(englishSubscribePage.packageEnPrice.getText(), expectedPrices[1]);
+            } catch (AssertionError e) {
+                System.out.println("Assertion failed: " + e.getMessage());
+                fail("Assertion failed");
+            }
         }
     }
 
@@ -67,15 +94,23 @@ public class SubscribePageTest extends TestBase {
         String actualCurrency;
         if (isArabicURL()) {
             arabicSubscribePage = new ArabicSubscribePage(driver);
-            actualCurrency = arabicSubscribePage.packageArCurrency.getText();
-            Assert.assertTrue(actualCurrency.contains(expectedArCurrency));
+            try {
+                actualCurrency = arabicSubscribePage.packageArCurrency.getText();
+                Assert.assertTrue(actualCurrency.contains(expectedArCurrency));
+            } catch (AssertionError e) {
+                System.out.println("Assertion failed: " + e.getMessage());
+                fail("Assertion failed");
+            }
         } else {
 //        asp.langBtn.click();
             englishSubscribePage = new EnglishSubscribePage(driver);
-            actualCurrency = englishSubscribePage.packageEnCurrency.getText();
-            Assert.assertTrue(actualCurrency.contains(expectedEnCurrency));
+            try {
+                actualCurrency = englishSubscribePage.packageEnCurrency.getText();
+                Assert.assertTrue(actualCurrency.contains(expectedEnCurrency));
+            }  catch (AssertionError e) {
+            System.out.println("Assertion failed: " + e.getMessage());
+            fail("Assertion failed");
         }
     }
-
 }
-
+}
